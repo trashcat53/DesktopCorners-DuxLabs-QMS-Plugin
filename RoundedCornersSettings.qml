@@ -5,7 +5,7 @@ import qs.Modules.Plugins
 
 PluginSettings {
     id: root
-    pluginId: "roundedCorners\n"
+    pluginId: "roundedCorners"
 
     StyledText {
         width: parent.width
@@ -17,25 +17,25 @@ PluginSettings {
 
     SliderSetting {
         settingKey: "cornerRadius"
-        label: "Corner Radius"
+        label: "Radius"
         description: "Size of the rounded corners"
-        defaultValue: 24
-        minimum: 4
-        maximum: 64
+        defaultValue: 15
+        minimum: 0
+        maximum: 128
         unit: "px"
     }
 
     ColorSetting {
         settingKey: "cornerColor"
-        label: "Corner Color"
-        description: ""
+        label: "Color"
+        description: "Color of the rounded corners"
         defaultValue: "#000000"
     }
 
     ToggleSetting {
         settingKey: "aboveFullscreen"
         label: "Show Over Fullscreen Windows"
-        description: "Off draws below fullscreen apps"
+        description: "Off draws below fullscreen windows"
         defaultValue: true
     }
 }

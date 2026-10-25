@@ -8,7 +8,7 @@ import qs.Modules.Plugins
 PluginComponent {
     id: root
 
-    property int cornerRadius: pluginData.cornerRadius ?? 24
+    property int cornerRadius: pluginData.cornerRadius ?? 15
     property color cornerColor: pluginData.cornerColor ?? "#000000"
     property bool aboveFullscreen: pluginData.aboveFullscreen ?? true
 
