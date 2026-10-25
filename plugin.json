@@ -1,0 +1,12 @@
+{
+  "id": "DesktopCorners",
+  "name": "Desktop Corners",
+  "description": "Adds customizable rounded corners to your desktop",
+  "version": "1.0.0",
+  "author": "TrashCat53",
+  "icon": "widgets",
+  "type": "widget",
+  "component": "./MyWidget.qml",
+  "settings": "./MySettings.qml",
+  "permissions": ["settings_read", "settings_write"]
+}
