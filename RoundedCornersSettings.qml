@@ -5,7 +5,7 @@ import qs.Modules.Plugins
 
 PluginSettings {
     id: root
-    pluginId: "roundedCorners"
+    pluginId: "roundedCorners\n"
 
     StyledText {
         width: parent.width
@@ -28,7 +28,7 @@ PluginSettings {
     ColorSetting {
         settingKey: "cornerColor"
         label: "Corner Color"
-        description: "Usually black to match a bezel"
+        description: ""
         defaultValue: "#000000"
     }
 

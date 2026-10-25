@@ -31,18 +31,15 @@ PluginComponent {
             color: "transparent"
             exclusionMode: ExclusionMode.Ignore
 
-            // An empty input region makes the whole overlay click-through
             mask: Region {}
 
             WlrLayershell.namespace: "dms:plugins:rounded-corners"
             WlrLayershell.layer: root.aboveFullscreen ? WlrLayer.Overlay : WlrLayer.Top
             WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
 
-            // One corner piece: a square with a quarter circle cut out.
-            // Drawn as top-left, then rotated for the other three corners.
             component Corner: Shape {
                 id: corner
-                property int steps: 0   // quarter turns clockwise
+                property int steps: 0
 
                 width: root.cornerRadius
                 height: root.cornerRadius

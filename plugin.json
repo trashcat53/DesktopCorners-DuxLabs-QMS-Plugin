@@ -7,8 +7,8 @@
   "icon": "rounded_corner",
   "type": "daemon",
   "capabilities": ["daemon"],
-  "component": "./RoundedCorners.qml",
-  "settings": "./RoundedCornersSettings.qml",
+  "component": "/RoundedCorners.qml",
+  "settings": "/RoundedCornersSettings.qml",
   "requires_dms": ">=2.0.0",
   "permissions": ["settings_read", "settings_write"]
 }
