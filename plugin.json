@@ -1,12 +1,14 @@
 {
-  "id": "DesktopCorners",
-  "name": "Desktop Corners",
-  "description": "Adds customizable rounded corners to your desktop",
+  "id": "roundedCorners",
+  "name": "Rounded Corners",
+  "description": "Rounds the corners of every screen overlay",
   "version": "1.0.0",
   "author": "TrashCat53",
-  "icon": "widgets",
-  "type": "widget",
-  "component": "./MyWidget.qml",
-  "settings": "./MySettings.qml",
+  "icon": "rounded_corner",
+  "type": "daemon",
+  "capabilities": ["daemon"],
+  "component": "./RoundedCorners.qml",
+  "settings": "./RoundedCornersSettings.qml",
+  "requires_dms": ">=2.0.0",
   "permissions": ["settings_read", "settings_write"]
 }
