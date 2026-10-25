@@ -34,7 +34,14 @@ PluginComponent {
             mask: Region {}
 
             WlrLayershell.namespace: "dms:plugins:rounded-corners"
-            WlrLayershell.layer: root.aboveFullscreen ? WlrLayer.Overlay : WlrLayer.Top
+            WlrLayershell.layer: {
+                if (root.aboveFullscreen) {
+                    return WlrLayer.Overlay;
+                }
+                else {
+                    return WlrLayer.Top;
+                }
+            }
             WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
 
             component Corner: Shape {
@@ -66,10 +73,33 @@ PluginComponent {
                 }
             }
 
-            Corner { steps: 0; anchors.top: parent.top;       anchors.left: parent.left }
-            Corner { steps: 1; anchors.top: parent.top;       anchors.right: parent.right }
-            Corner { steps: 2; anchors.bottom: parent.bottom; anchors.right: parent.right }
-            Corner { steps: 3; anchors.bottom: parent.bottom; anchors.left: parent.left }
+            // Top left corner
+            Corner {
+                steps: 0;
+                anchors.top: parent.top;
+                anchors.left: parent.left
+            }
+
+            // Top right corner
+            Corner {
+                steps: 1;
+                anchors.top: parent.top;
+                anchors.right: parent.right
+            }
+
+            // Bottom right corner
+            Corner {
+                steps: 2;
+                anchors.bottom: parent.bottom;
+                anchors.right: parent.right
+            }
+
+            // bottom left corner
+            Corner {
+                steps: 3;
+                anchors.bottom: parent.bottom;
+                anchors.left: parent.left
+            }
         }
     }
 

@@ -1,7 +1,7 @@
 {
   "id": "roundedCorners",
   "name": "Rounded Corners",
-  "description": "Rounds the corners of every screen overlay",
+  "description": "Adds rounded corners to your desktop to mimic round bezels",
   "version": "1.0.0",
   "author": "TrashCat53",
   "icon": "rounded_corner",
