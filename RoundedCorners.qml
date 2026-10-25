@@ -103,5 +103,6 @@ PluginComponent {
         }
     }
 
+    // Console confirmation for debugging
     Component.onCompleted: console.info("Rounded Corners started")
 }
